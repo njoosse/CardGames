@@ -48,7 +48,7 @@ class Deck():
         if len(self.unplayed) > 0:
             card = self.unplayed.pop()
             self.cardsInHands.append(card)
-            return self.readCard(card)
+            return card
         # If there are not any cards in the deck,
         #   shuffles the discard pile and then draws
         else:
