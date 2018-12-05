@@ -22,6 +22,12 @@ class Card():
         else:
             self.color = 'Black'
 
+    # Returns a string telling what the card is
+    def readCard(self):
+        cardString = '{} of {}'.format(self.val, self.suit)
+        return cardString
+
+
 # Class to store a deck of cards
 class Deck():
     def __init__(self):
@@ -37,11 +43,6 @@ class Deck():
 
         # Initial shuffle of the deck
         self.shuffle()
-
-    # Returns a string telling what the card is
-    def readCard(self, card):
-        cardString = '{} of {}'.format(card.val, card.suit)
-        return cardString
 
     # Removes the last card in unplayed, puts it in cardsInHands
     def drawCard(self):
