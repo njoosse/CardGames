@@ -79,6 +79,3 @@ class Deck():
             else:
                 print('Card not in any hand')
                 return -1
-
-
-deck = Deck()
